@@ -513,10 +513,12 @@ p {
 
 .flow-list li {
   display: grid;
-  grid-template-columns: 48px minmax(120px, 0.26fr) minmax(0, 1fr);
+  grid-template-columns: 48px minmax(150px, 210px) minmax(260px, 460px);
+  justify-content: center;
   gap: 18px;
   align-items: center;
   padding: 20px 0;
+  text-align: center;
   border-top: 1px solid var(--soft-line);
 }
 
@@ -566,6 +568,7 @@ p {
 
 details {
   padding: 21px 0;
+  text-align: center;
   border-top: 1px solid var(--soft-line);
 }
 
@@ -582,7 +585,10 @@ summary {
 }
 
 details p {
+  max-width: 620px;
   margin-top: 12px;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--muted);
   font-size: 14px;
 }
@@ -612,9 +618,11 @@ details p {
 
 .news-list li {
   display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
+  grid-template-columns: max-content minmax(260px, max-content);
+  justify-content: center;
   gap: 20px;
   padding: 17px 0;
+  text-align: center;
   border-bottom: 1px solid var(--soft-line);
 }
 
@@ -786,11 +794,14 @@ details p {
   }
 
   .flow-list li {
-    grid-template-columns: 44px minmax(0, 1fr);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 8px;
   }
 
   .flow-list p {
-    grid-column: 2;
+    grid-column: auto;
+    max-width: 420px;
   }
 
   .gallery-page {
@@ -892,6 +903,7 @@ details p {
   .news-list li {
     grid-template-columns: 1fr;
     gap: 4px;
+    justify-items: center;
   }
 
   .contact {
