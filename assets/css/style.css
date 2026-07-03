@@ -386,6 +386,11 @@ p {
   margin-top: 28px;
 }
 
+#service {
+  max-width: none;
+  background: var(--cream);
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1fr);
@@ -469,6 +474,8 @@ p {
   grid-template-columns: 1fr;
   gap: 34px;
   align-items: start;
+  max-width: none;
+  background: var(--paper);
 }
 
 .text-link {
@@ -486,7 +493,10 @@ p {
   grid-auto-rows: 380px;
   gap: 10px;
   width: 100%;
+  max-width: 1040px;
   min-height: 380px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mini-gallery span:nth-child(1),
@@ -512,7 +522,7 @@ p {
 
 .flow {
   max-width: none;
-  background: var(--paper);
+  background: var(--cream);
 }
 
 .flow .section-heading,
@@ -568,6 +578,14 @@ p {
 
 .voice-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.voices {
+  max-width: none;
+  background: var(--paper);
 }
 
 .voice-grid blockquote {
@@ -579,7 +597,8 @@ p {
 }
 
 .faq {
-  max-width: 900px;
+  max-width: none;
+  background: var(--cream);
 }
 
 .faq details {
@@ -658,17 +677,24 @@ details p {
 }
 
 .contact {
-  max-width: 980px;
-  margin: clamp(60px, 8vw, 98px) auto;
-  padding: clamp(44px, 7vw, 76px) clamp(22px, 5vw, 70px);
+  max-width: none;
+  margin: 0 auto;
+  padding: clamp(60px, 8vw, 98px) clamp(22px, 5vw, 70px);
   color: var(--ink);
   text-align: center;
+  background: var(--cream);
+}
+
+.contact-panel {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: clamp(44px, 7vw, 76px) clamp(22px, 5vw, 70px);
   background: rgba(255, 253, 248, 0.78);
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
 
-.contact p {
+.contact-panel p {
   max-width: 660px;
   margin-right: auto;
   margin-left: auto;
@@ -929,8 +955,12 @@ details p {
   }
 
   .contact {
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 60px 24px;
+  }
+
+  .contact-panel {
     padding: 38px 22px;
   }
 
