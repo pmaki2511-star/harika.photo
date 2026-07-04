@@ -80,6 +80,7 @@ img {
   gap: clamp(10px, 1.25vw, 18px);
   color: var(--muted);
   font-size: 11px;
+  line-height: 1.4;
   letter-spacing: 0.06em;
 }
 
@@ -550,7 +551,7 @@ p {
   gap: 18px;
   align-items: center;
   padding: 20px 0;
-  text-align: center;
+  text-align: left;
   border-top: 1px solid var(--soft-line);
 }
 
@@ -562,6 +563,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  justify-self: center;
   width: 36px;
   height: 36px;
   border: 1px solid var(--line);
@@ -605,6 +607,7 @@ p {
   width: min(100%, 760px);
   margin-right: auto;
   margin-left: auto;
+  text-align: left;
 }
 
 details {
@@ -628,8 +631,6 @@ summary {
 details p {
   max-width: 620px;
   margin-top: 12px;
-  margin-right: auto;
-  margin-left: auto;
   color: var(--muted);
   font-size: 14px;
 }
@@ -961,8 +962,10 @@ details p {
   }
 
   .flow-list li {
-    grid-template-columns: 28px max-content;
-    justify-content: center;
+    grid-template-columns: 28px minmax(0, 1fr);
+    width: min(100%, 320px);
+    margin-right: auto;
+    margin-left: auto;
     justify-items: start;
     align-items: center;
     column-gap: 10px;
@@ -981,8 +984,8 @@ details p {
 
   .flow-list p {
     grid-column: 1 / -1;
-    justify-self: center;
-    max-width: 320px;
+    width: 100%;
+    max-width: none;
   }
 
   .contact-panel {
