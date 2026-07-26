@@ -121,7 +121,7 @@ img {
   grid-template-columns: 1fr;
   gap: clamp(28px, 4vw, 48px);
   min-height: auto;
-  padding: clamp(42px, 6vw, 76px) clamp(20px, 5vw, 70px) clamp(58px, 8vw, 92px);
+  padding: clamp(18px, 3vw, 34px) clamp(20px, 5vw, 70px) clamp(58px, 8vw, 92px);
 }
 
 .hero-copy {
@@ -1138,7 +1138,7 @@ details p {
 }
 
 .page-hero {
-  padding: clamp(70px, 10vw, 130px) clamp(20px, 5vw, 70px) 44px;
+  padding: clamp(34px, 4vw, 50px) clamp(20px, 5vw, 70px) 44px;
 }
 
 .page-hero h1 {
@@ -1600,7 +1600,7 @@ details p {
   }
 
   .hero {
-    padding-top: 34px;
+    padding-top: 26px;
   }
 
   .hero-visual {
@@ -1822,6 +1822,7 @@ details p {
   }
 
   .hero {
+    padding-top: 22px;
     padding-right: 24px;
     padding-left: 24px;
   }
@@ -2016,6 +2017,10 @@ details p {
 
   .menu-detail-page {
     padding-top: 0;
+  }
+
+  .page-hero {
+    padding-top: 34px;
   }
 
   .menu-tab-wrap {
