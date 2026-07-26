@@ -508,6 +508,21 @@ p {
   line-height: 1.5;
 }
 
+.service-card-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.service-card-copy p {
+  line-height: 1.85;
+}
+
+.service-card-keywords {
+  color: var(--plum) !important;
+  font-size: 13px !important;
+  line-height: 1.75 !important;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
