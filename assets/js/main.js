@@ -51,6 +51,7 @@ const setupCardCarousel = (carouselSelector, prevSelector, nextSelector, cardSel
 
 setupCardCarousel("[data-service-carousel]", "[data-carousel-prev]", "[data-carousel-next]", ".service-card");
 setupCardCarousel("[data-voice-carousel]", "[data-voice-prev]", "[data-voice-next]", ".voice-card");
+setupCardCarousel("[data-gallery-carousel]", "[data-gallery-prev]", "[data-gallery-next]", ".gallery-card");
 
 const menuTabs = document.querySelectorAll("[data-menu-tab]");
 const menuPanels = document.querySelectorAll("[data-menu-panel]");
