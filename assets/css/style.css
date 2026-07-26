@@ -1268,6 +1268,24 @@ details p {
   border-radius: var(--radius);
 }
 
+@media (min-width: 901px) {
+  .menu-detail-intro {
+    overflow: hidden;
+  }
+
+  .menu-detail-intro .menu-detail-photo {
+    align-self: stretch;
+    width: calc(100% + 28px);
+    height: calc(100% + 56px);
+    min-height: 235px;
+    margin: -28px 0 -28px -28px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: var(--radius) 0 0 var(--radius);
+  }
+}
+
 .menu-detail-photo {
   aspect-ratio: 500 / 333;
   background: var(--paper);
@@ -1293,7 +1311,7 @@ details p {
 .menu-detail-list {
   display: grid;
   gap: 0;
-  max-width: 720px;
+  max-width: none;
   margin: 26px 0 0;
 }
 
