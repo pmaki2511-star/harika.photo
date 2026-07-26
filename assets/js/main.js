@@ -55,8 +55,6 @@ setupCardCarousel("[data-gallery-carousel]", "[data-gallery-prev]", "[data-galle
 
 const menuTabs = document.querySelectorAll("[data-menu-tab]");
 const menuPanels = document.querySelectorAll("[data-menu-panel]");
-const menuDetailPage = document.querySelector(".menu-detail-page");
-
 if (menuTabs.length && menuPanels.length) {
   const activateMenuPanel = (targetId) => {
     menuTabs.forEach((tab) => {
@@ -79,7 +77,6 @@ if (menuTabs.length && menuPanels.length) {
       }
 
       activateMenuPanel(tab.dataset.menuTab);
-      menuDetailPage?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
 }

@@ -2035,6 +2035,19 @@ details p {
     padding: 24px 22px;
   }
 
+  .menu-detail-intro {
+    overflow: hidden;
+  }
+
+  .menu-detail-intro .menu-detail-photo {
+    width: calc(100% + 44px);
+    margin: -24px -22px 22px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
   .english-page {
     padding-top: 24px;
     padding-right: 22px;
