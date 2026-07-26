@@ -618,7 +618,14 @@ p {
 
 .profile-copy > p {
   color: var(--muted);
+  line-height: 1.8;
   overflow-wrap: anywhere;
+}
+
+.profile-copy > p br + br {
+  display: block;
+  content: "";
+  margin-top: 0.55em;
 }
 
 .split > * {
