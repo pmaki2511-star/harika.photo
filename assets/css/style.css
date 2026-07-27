@@ -2269,7 +2269,7 @@ details p {
 
   .gallery-filter-button:first-child {
     grid-column: 1 / -1;
-    width: auto;
+    width: calc((100% - 16px) / 3);
     justify-self: center;
   }
 
