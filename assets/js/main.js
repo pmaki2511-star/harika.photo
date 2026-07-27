@@ -80,3 +80,28 @@ if (menuTabs.length && menuPanels.length) {
     });
   });
 }
+
+const galleryFilterButtons = document.querySelectorAll("[data-gallery-filter]");
+const galleryItems = document.querySelectorAll("[data-gallery-category]");
+
+if (galleryFilterButtons.length && galleryItems.length) {
+  const filterGallery = (category) => {
+    galleryFilterButtons.forEach((button) => {
+      const isActive = button.dataset.galleryFilter === category;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    galleryItems.forEach((item) => {
+      item.hidden = category !== "all" && item.dataset.galleryCategory !== category;
+    });
+  };
+
+  galleryFilterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.dataset.galleryFilter) {
+        filterGallery(button.dataset.galleryFilter);
+      }
+    });
+  });
+}
