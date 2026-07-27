@@ -1184,7 +1184,7 @@ details p {
 }
 
 .gallery-page-hero {
-  padding-bottom: clamp(30px, 4vw, 48px);
+  padding-bottom: 12px;
   text-align: center;
 }
 
@@ -1196,6 +1196,11 @@ details p {
 
 .gallery-page-section {
   padding-top: 0;
+  padding-bottom: clamp(16px, 1.8vw, 22px);
+}
+
+.gallery-page-section + .contact.compact {
+  margin-top: 18px;
 }
 
 .gallery-filter {
@@ -2227,9 +2232,22 @@ details p {
   }
 }
 
+@media (min-width: 901px) {
+  .gallery-filter {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    width: max-content;
+  }
+}
+
 @media (max-width: 560px) {
   .gallery-page-hero {
     text-align: center;
+  }
+
+  .gallery-page-section {
+    padding-top: 0;
+    padding-bottom: 16px;
   }
 
   .gallery-filter {
