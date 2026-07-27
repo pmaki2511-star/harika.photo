@@ -2248,20 +2248,37 @@ details p {
   .gallery-page-section {
     padding-top: 0;
     padding-bottom: 16px;
+    min-width: 0;
+  }
+
+  .gallery-page-hero p,
+  .gallery-filter,
+  .gallery-page[data-gallery-grid] {
+    width: calc(100vw - 48px);
+    max-width: calc(100vw - 48px);
   }
 
   .gallery-filter {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
     justify-content: center;
     gap: 8px;
     margin-bottom: 28px;
   }
 
+  .gallery-filter-button:first-child {
+    grid-column: 1 / -1;
+    width: auto;
+    justify-self: center;
+  }
+
   .gallery-filter-button {
     min-height: 37px;
-    padding: 7px 13px;
+    width: 100%;
+    padding: 7px 6px;
     font-size: 13px;
+    white-space: nowrap;
   }
 
   .gallery-page[data-gallery-grid] {
